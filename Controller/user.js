@@ -22,7 +22,7 @@ const login = (req, res)=>{
             const token = jwt.sign({ id:user._id }, config.jwtKey);
             res.send("Welcome back!")
         }else{
-            res.send("Please provide a valid email address and password.")
+            res.send("Provide a valid email address and password.")
         }
         
     })
