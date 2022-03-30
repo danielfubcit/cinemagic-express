@@ -1,5 +1,6 @@
 # cinemagic-express
 
+Member: Daniel Fu, Michael Trinh, Jessica Wu, Nhung Tran (Charlene), Tiffany Tu
 Auth
 auth.js: we want to verify the token by using JWT, and if there is no error, we will be able to save the user data. 
 
@@ -13,3 +14,5 @@ routes
 user.js: functions to make the request. Router to do post request and ask post to login and sign up. 
 
 index.js: connect to the database by using mongoose and make the server running on 3000
+
+link: https://cinemagic-coral.vercel.app/
