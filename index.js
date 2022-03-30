@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 const config = require("./config")
 const userRouter = require('./routes/user')
 
-//at the same time, it is going to connect to the database
 mongoose.connect(config.MONGODB_URL,(error)=>{
     if(error) return console.log(error)
     console.log('connected to db successfully')

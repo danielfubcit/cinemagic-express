@@ -5,7 +5,6 @@ const config = require("../config")
 const signup = (req, res)=>{
     
     const user = new User()
-    //get the email & password from the req
     user.name = req.body.name
     user.email = req.body.email
     user.password = req.body.password
@@ -20,9 +19,7 @@ const login = (req, res)=>{
         if(err || !user) return res.status(404).send("user not found")
 
         if(user.comparePassword(req.body.password)){
-            //we don't want the user login agin if it is already login
             const token = jwt.sign({ id:user._id }, config.jwtKey);
-            // res.send(token)
             res.send("Welcome back!")
         }else{
             res.send("Please provide a valid email address and password.")
