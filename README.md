@@ -1,6 +1,11 @@
 # cinemagic-express
 
 Member: Daniel Fu, Michael Trinh, Jessica Wu, Nhung Tran (Charlene), Tiffany Tu
+- Michael: Firebase with GG authentication
+- Charlene Tran: Login/ Logout pages and styled component, Database design, Clean up modular code
+- Tiffany: UI design, Database design, Clean up modular code
+- Jessica: Fucntion to make the request, Database design, Clean up modular code
+- Daniel: MongoDB, correctness of implementing, Express, routers and controllers.
 
 # Auth
 auth.js: we want to verify the token by using JWT, and if there is no error, we will be able to save the user data. 
